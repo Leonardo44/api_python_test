@@ -1,6 +1,11 @@
-from flask import Flask, jsonify
+from flask import Flask
+from flask import jsonify
 
-app == Flask(__name__)
+def create_app():
+    app = Flask(__name__)
+    return app
+
+app = create_app()
 
 @app.route('/api', methods=['GET'])
 def get_data():
