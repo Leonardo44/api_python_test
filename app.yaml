@@ -1,5 +1,5 @@
-runtime: python37
+runtime: python39
 
 handlers:
   - url: /.*
-    script: app.py
+    script: python3 app.py
